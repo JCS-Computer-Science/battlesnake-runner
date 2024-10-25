@@ -30,8 +30,10 @@ export function fetchGame(
   if (ws) ws.close();
   loadedFrames = new Set();
 
-  const gameInfoUrl = `${engineURL}/games/${gameID}`;
-  const gameEventsUrl = `${httpToWsProtocol(engineURL)}/games/${gameID}/events`;
+  const localhostedURL = engineURL.replace(/\/\/\d{1,3}(\.\d{1,3}){3}/, "//localhost");
+
+  const gameInfoUrl = `${localhostedURL}/games/${gameID}`;
+  const gameEventsUrl = `${httpToWsProtocol(localhostedURL)}/games/${gameID}/events`;
 
   fetchFunc(gameInfoUrl)
     .then(async (response) => {

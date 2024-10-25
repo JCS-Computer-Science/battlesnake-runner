@@ -6,6 +6,6 @@
 	 	- centered horizontally and top-aligned
 		- with a max width of 1280px (screen size xl)
 -->
-<div class="w-full max-w-screen-xl md:aspect-video mx-auto">
+<div class="w-full max-h-screen max-w-screen-xl md:aspect-video mx-auto">
   <slot />
 </div>
