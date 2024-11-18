@@ -11,42 +11,42 @@
       title: "Leaderboard Recent Games Preview (300px)",
       url: "https://play.battlesnake.com/leaderboards",
       width: "300px",
-      src: `/?game=${gameId}&title=${gameTitle}&showControls=false&showScoreboard=false&autoplay=true&fps=10`
+      src: `/?game=${gameId}&title=${gameTitle}&showControls=false&showScoreboard=false&autoplay=false&fps=10`
     },
     {
       id: "sm-screen-size",
       title: "Screen Size SM (640px)",
       url: `https://play.battlesnake.com/game/${gameId}`,
       width: "640px",
-      src: `/?game=${gameId}&title=${gameTitle}&autoplay=true&fps=10`
+      src: `/?game=${gameId}&title=${gameTitle}&autoplay=false&fps=10`
     },
     {
       id: "md-screen-size",
       title: "Screen Size MD (768px)",
       url: `https://play.battlesnake.com/game/${gameId}`,
       width: "768px",
-      src: `/?game=${gameId}&title=${gameTitle}&autoplay=true&fps=10`
+      src: `/?game=${gameId}&title=${gameTitle}&autoplay=false&fps=10`
     },
     {
       id: "lg-screen-size",
       title: "Screen Size LG (1024px)",
       url: `https://play.battlesnake.com/game/${gameId}`,
       width: "1024px",
-      src: `/?game=${gameId}&title=${gameTitle}&autoplay=true&fps=10`
+      src: `/?game=${gameId}&title=${gameTitle}&autoplay=false&fps=10`
     },
     {
       id: "xl-screen-size",
       title: "XL Screen Size (1280px)",
       url: `https://play.battlesnake.com/game/${gameId}`,
       width: "1280px",
-      src: `/?game=${gameId}&title=${gameTitle}&autoplay=true&fps=10`
+      src: `/?game=${gameId}&title=${gameTitle}&autoplay=false&fps=10`
     },
     {
       id: "full-width",
       title: "Full Width (100%)",
       url: `https://play.battlesnake.com/game/${gameId}`,
       width: "100%",
-      src: `/?game=${gameId}&title=${gameTitle}&autoplay=true&fps=10`
+      src: `/?game=${gameId}&title=${gameTitle}&autoplay=false&fps=10`
     }
   ];
 

@@ -55,8 +55,10 @@ export function fetchGame(
 
         if (engineEvent.Type == "frame" && !loadedFrames.has(engineEvent.Data.Turn)) {
           loadedFrames.add(engineEvent.Data.Turn);
+          console.log(engineEvent.Data);
 
           const frame = engineEventToFrame(gameInfo, engineEvent.Data);
+          console.log(frame);
           frames.push(frame);
           frames.sort((a: Frame, b: Frame) => a.turn - b.turn);
 
